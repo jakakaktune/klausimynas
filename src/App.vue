@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <pradzia v-if="!$store.state.slide" />
+    <karusele v-if="$store.state.slide" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Karusele from './components/karusele.vue'
+import Pradzia from './components/pradzia.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Pradzia,
+    Karusele,
+  },
+  mounted: function () {
+    console.log(this.$store.state.test)
   }
 }
 </script>
@@ -24,5 +30,21 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.button {
+  padding: 15px;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 500px;
+  border: 0;
+  min-width: 200px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 </style>
