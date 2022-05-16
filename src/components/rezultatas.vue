@@ -2,12 +2,19 @@
   <div class="rezultatas">
     <h2>Jūsų rezultatas:</h2>
     <h2>{{ $store.state.score ? $store.state.score : 0 }}</h2>
+
+    <button class="button" @click="restart">Į pradžią</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'rezultatas',
+  methods: {
+    restart: function () {
+      window.location.reload();
+    }
+  }
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="ketvirta slide">
-    <h2>1</h2>
+    <h2>4</h2>
     <audio :src="require('@/assets/audio/4.mp3')" controls></audio>
   </div>
 </template>
