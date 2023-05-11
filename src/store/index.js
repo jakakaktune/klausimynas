@@ -10,7 +10,7 @@ export default new Vuex.Store({
     selected: false,
     score: 0,
     atsakymai: [
-      false, 2, 5, 7, 3, 0
+      false, 5, 7, 6, 2, 0
     ]
   },
   mutations: {

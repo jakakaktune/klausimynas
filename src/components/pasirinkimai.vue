@@ -17,14 +17,14 @@ export default {
   data() {
     return {
       images: [
-        require('@/assets/Suomija.jpg'),
-        require('@/assets/Portugalija.jpg'),
-        require('@/assets/Indija.jpg'),
-        require('@/assets/Prancuzija.jpg'),
-        require('@/assets/Estija.jpg'),
-        require('@/assets/Italija.png'),
-        require('@/assets/Gruzija.jpg'),
-        require('@/assets/Lenkija.webp'),
+        require('@/assets/ukraina.png'),
+        require('@/assets/budapestas.jpeg'),
+        require('@/assets/italija.jpeg'),
+        require('@/assets/ispanija.jpg'),
+        require('@/assets/astana.jpeg'),
+        require('@/assets/sweeden.webp'),
+        require('@/assets/portugalija.webp'),
+        require('@/assets/izraelis.jpeg'),
       ]
     }
   },
